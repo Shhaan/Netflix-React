@@ -46,7 +46,15 @@ const RowPost = () => {
            ))}
         
         </div>
-      {mId && <Youtube videoId={mId.key} opts={opts}/>}
+      {mId && 
+      <div>
+    <h1 style={{cursor:'pointer',textAlign:'right'}}  onClick={()=>setMid('')}>X</h1>
+<Youtube videoId={mId.key} opts={opts}/>
+      </div>
+      
+      
+      
+      }
 
     </div>
   )
